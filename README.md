@@ -17,6 +17,8 @@ This repository is release-ready as a product foundation and demo application:
 
 Before operating a public compute marketplace, complete the production controls listed in [docs/PRODUCTION_CHECKLIST.md](docs/PRODUCTION_CHECKLIST.md).
 
+https://github.com/RohanKarimi/AI/blob/9afdcfef5b630120966f66a93c09b30c34a79c24/docs/image.png
+
 ## Features
 
 - Local-first AI chat with model selection and install states.
