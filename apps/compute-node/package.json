@@ -1,0 +1,12 @@
+{
+  "name": "@aios/compute-node",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "node --watch src/index.mjs",
+    "check": "node --check src/index.mjs"
+  },
+  "engines": { "node": ">=22.0.0" }
+}

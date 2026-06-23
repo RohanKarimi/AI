@@ -1,0 +1,27 @@
+.env
+**/.env
+**/node_modules
+**/dist
+**/.data
+**/*.log
+**/*.tsbuildinfo
+.edge-*
+apps/compute-node/keys
+
+# Local browser profiles and test cache
+apps/web/.edge-headless-profile/
+.edge-verify-sidebar-quick/
+**/.edge-headless-profile/
+**/.edge-verify-sidebar-quick/
+
+# Local browser profiles and test cache
+apps/web/.edge-headless-profile/
+.edge-verify-sidebar-quick/
+**/.edge-headless-profile/
+**/.edge-verify-sidebar-quick/
+
+# Local browser profiles and test cache
+apps/web/.edge-headless-profile/
+.edge-verify-sidebar-quick/
+**/.edge-headless-profile/
+**/.edge-verify-sidebar-quick/

@@ -1,0 +1,19 @@
+{
+  "name": "aios-network-platform",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Local-first AI workspace with an opt-in encrypted community compute protocol.",
+  "scripts": {
+    "web:install": "npm --prefix apps/web ci",
+    "web:check": "npm --prefix apps/web run check",
+    "web:build": "npm --prefix apps/web run build",
+    "coordinator:install": "npm --prefix services/compute-coordinator ci",
+    "coordinator:test": "npm --prefix services/compute-coordinator test",
+    "coordinator:start": "npm --prefix services/compute-coordinator start",
+    "node:install": "npm --prefix apps/compute-node ci",
+    "node:start": "npm --prefix apps/compute-node start",
+    "check": "npm run web:check && npm run coordinator:test",
+    "build": "npm run web:build"
+  },
+  "engines": { "node": ">=22.0.0" }
+}

@@ -1,0 +1,32 @@
+stages: [verify, build]
+
+image: node:22-alpine
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - apps/web/node_modules/
+    - services/compute-coordinator/node_modules/
+
+verify_web:
+  stage: verify
+  script:
+    - npm --prefix apps/web ci
+    - npm --prefix apps/web run check
+
+verify_coordinator:
+  stage: verify
+  script:
+    - npm --prefix services/compute-coordinator ci
+    - npm --prefix services/compute-coordinator test
+
+build_web:
+  stage: build
+  needs: [verify_web]
+  script:
+    - npm --prefix apps/web ci
+    - npm --prefix apps/web run build
+  artifacts:
+    when: always
+    paths: [apps/web/dist]
+    expire_in: 14 days
