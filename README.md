@@ -16,6 +16,7 @@ This repository is release-ready as a product foundation and demo application:
 - Error boundaries, storage fallbacks and user-facing error states are included.
 
 Before operating a public compute marketplace, complete the production controls listed in [docs/PRODUCTION_CHECKLIST.md](docs/PRODUCTION_CHECKLIST.md).
+![Uploading image.png…]()
 
 ## Features
 
